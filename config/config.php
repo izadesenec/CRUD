@@ -2,8 +2,8 @@
 
 $db=array(
     'host'=>'localhost',
-    'user'=>'news',
-    'password'=>'ENDjnsZCqJMxp6PW',
+    'user'=>'root',
+    'password'=>'',
     'name'=>'news_editor',
 );
 $template="template/main.php";
