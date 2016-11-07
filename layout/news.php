@@ -1,5 +1,6 @@
 <?php if ($news) : ?>
-    <table>
+
+<table id="table">
         <caption>News</caption>
         <tr>
             <th>Title</th>
@@ -25,8 +26,10 @@
                 </td>
             </tr>
         <?php endforeach; ?>
+            <button id="createform">Create news</button>
     </table>
 <?php else : ?>
     oops
 <?php endif; ?>
-<a href="<?= $_SERVER['PHP_SELF']?>?action=createform">Add new news</a>
+<!--<a href="<?= $_SERVER['PHP_SELF']?>?action=createform" id="createform">Add new news</a> -->
+    

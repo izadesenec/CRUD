@@ -1,4 +1,4 @@
-<form method="post" action="<?= $_SERVER['PHP_SELF']?>?action=create" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data" id="formx">
     <label>Title:
         <input type="text" name="title" required/>
     </label>
@@ -8,5 +8,5 @@
     <label>Image:
         <input type="file" name="image"/>
     </label>
-    <input type="submit" value="create"/>
+    <input type="submit" id="add" value="create"/>
 </form>
