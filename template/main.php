@@ -8,10 +8,11 @@
         <script src="js/main.js" type="text/javascript"></script>
     </head>
     <body>
-        
+        <div id="showtable">
         <?php
             include_once $layout_name;
         ?>
+		</div>
        <div id="result"></div>
     </body>
 </html>

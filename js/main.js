@@ -13,9 +13,10 @@ $(document).ready(function () {
                         processData: false,
                         contentType: false,
                         success: function (data) {
-                            $('#table').empty();
-                            $('#createform').empty();
-                            $('#result').html(data);
+                            $('#showtable').remove();
+                            //$('#createform').empty();
+                            //$('#result').html(data);
+							$('body').html(data);
                         },
                         error: function (xhr, str) {
                             alert('Возникла ошибка: ' + xhr.responseCode);
@@ -29,7 +30,27 @@ $(document).ready(function () {
             }
         });
     });
-
+	//$('#delete').submit(function (event) {
+	//	event.preventDefault();	
+	//	var m_data=$(this).serialize();
+	//	$.ajax({
+	//		url: 'index.php?action=delete',
+	//		type: 'post',
+	//		data: m_data,
+	//		success: function (data) {
+    //            $('#showtable').remove();
+    //            //$('#createform').empty();
+    //            //$('#result').html(data);
+	//			$('body').html(data);
+    //        },
+    //        error: function (xhr, str) {
+    //            alert('Возникла ошибка: ' + xhr.responseCode);
+    //        }
+    //        //    }); 
+	//	});
+	//	//return false;
+	//});
+	
 });
 
 

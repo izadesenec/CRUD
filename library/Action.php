@@ -85,6 +85,7 @@ class Action {
     
     public function delete() {
         $id = filter_input(INPUT_POST, 'id');
+		//var_dump($_POST);
         if ($id) {
             $this->news_editor->deleteNewsById($id);
         }

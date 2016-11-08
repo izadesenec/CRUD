@@ -21,7 +21,7 @@
                     <form method="post">
                         <input type="hidden" name="id" value="<?= $item['id'] ?>"/>
                         <input type="submit" formaction="<?= $_SERVER['PHP_SELF']?>?action=editform" value="edit"/>
-                        <input type="submit" formaction="<?= $_SERVER['PHP_SELF']?>?action=delete" value="delete"/>
+                        <input type="submit" formaction="<?= $_SERVER['PHP_SELF']?>?action=delete" value="delete" id="delete"/>
                     </form>
                 </td>
             </tr>
