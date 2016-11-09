@@ -73,7 +73,6 @@ class Action {
         $title = filter_input(INPUT_POST,'title');
         $content = filter_input(INPUT_POST,'content');
         $date = time();
-        
         $file = $_FILES['image'];
         $path_img = "images/".$file['name'];
         move_uploaded_file($file['tmp_name'], $path_img);
